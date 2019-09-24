@@ -10,7 +10,8 @@ script:
   - ./gradlew bootJar -s
 deploy:
   provider: releases
-  api_key: $GITHUB_OAUTH_TOKEN
+  api_key: "NRSqB/DfFkwUeyCNN8pZJoN7mq2/AKBTzXZ+k9Qoos1WDCP2L7PvmDavQkHRGv3vcOWLXfA8SsS54ZIk5a9ac0zpmIyqghbh5fP2CsdaJGAB1gCF1SXeYZqeMj2pQfjNr0rvf2kKGhbjCR/s2DHH4VR6PVTiBQdR/nIMLvH7hSjhegCUKACOfvkKeIakpKJ5N7SCCBY3bqqaJs8Hw5AnB4pjSgqf9T4rYcWELW6A1qqLlTJBrGQAVBIhcTtGE1WWnhTLshtx/cuCdrNhq3iDDkkcaSnUna7ym9fy48R4v1UztTZBeYLYkmumVA2dyMG5t92GLXmNFDC17onBTMHGxxLcgSDa+tsBsw6A0K/s+PP8lSW9dLOZlMIKO/acH2lmO7jNcUK36shZxea2+zJvapOfpPEzjCAiRmHh1yLQsRrYPcLBZT/p+j+iuS3sPD93ZtPElhef08ufSCRWlG4ZcjVo9dCea3zyLSOVIxoHZnn3j/IxbsvDMHcjTEpRIomXKKF5yYsoVSQsiymCI3Rn8RxUSX+VGQScpXpprzpNJF8KV/yIcd1U3Zofj9l3Pr+UQjBuhmlJTELKzVDiiwyNljJI0VsvdUhLkCpkJmE8bnAeVH1s0soy6q7CKqUapxiDo/DlR64TXyctk4fUmmyDu34tyrNmT2Avzh/E9EsGJb8="
+  file: build/libs/*.jar
   skip_cleanup: true
   on:
     tags: true
